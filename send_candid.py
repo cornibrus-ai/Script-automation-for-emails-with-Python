@@ -5,15 +5,16 @@ import os
 from email.message import EmailMessage
 import ssl
 
+#Import des modules pour les délais d'envoie
+import time
+import random
+
 #Configuration de la console pour utiliser UTF-8
 import sys
 if os.name == 'nt':
   os.system('chcp 65001')
 
 from dotenv import load_dotenv, dotenv_values #import des paires clé-valeur pour charger les variables d'environnement depuis le fichier .env
-
-'''import time
-import random'''
 
 # Charger les variables d'environnement depuis un fichier .env
 load_dotenv()
