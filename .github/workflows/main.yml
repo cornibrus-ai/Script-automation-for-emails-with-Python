@@ -1,0 +1,38 @@
+# basic workflow avec la table d'actions
+
+name: CI
+
+#Contrôles quand l'action est run
+on:
+  # Trigger le workflow en push ou pull request mais seulement dans la branche 'main'
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # Permet de run ce workflow manuellement depuis la table d'actions
+  workflow_dispatch:
+
+# Un workflow est fait d'un ou plusieurs 'jobs' qui peuvent être run séquentiellement ou en parallèle
+jobs:
+  #Ce workflow contient un seul job appelé "build"
+  build:
+    #Le type de runner que le 'job' run
+    runs-on: ubuntu-latest
+
+    #Chaque étape représente une tâche exécutée séquentiellement après une autre, qui fait partie du 'job'
+    steps:
+      #Check-out le repo sous $GITHUB_WORKSPACE -- le 'job' peut y avoir accès
+      - uses: actions/checkout@v2
+
+      #Run une seule commande en utilisant le shell
+      - name: Run a one-line script
+        run: echo Hello, world !
+
+      #Run un ensemble de commandes en utilisant le shell
+      - name: Run a multi-line script
+      
+        #pipe
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
