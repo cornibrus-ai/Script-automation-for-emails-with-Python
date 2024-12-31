@@ -68,13 +68,13 @@ for data in email_data:
   phone_sender = "+33 601686536"
   message = f"""
   <html>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <body>
       <p>Bonjour {fullname_receiver},</p>
       <p>Je suis étudiant en Bachelor B1 d'IA à CESI. Je recherche un stage [Avril-Août 2025] en R&D pôle IA dans une entreprise innovante comme la vôtre.</p>
       <p>Je vous envoie ma candidature avec mon CV ci-joint pour un stage en IA.</p>
       <p>N'hésitez pas à me contacter au {phone_sender} ! </p>
-      <p>Vous pouvez également visiter mon <a href="https://www.linkedin.com/in/maxime-ravaux">profil LinkedIn</a>.</p>
+      <p>Vous pouvez également visiter mon <a href="https://www.linkedin.com/in/maxime-ravaux-6a389325b/">profil LinkedIn</a>.</p>
       <p>Cordialement,<br><br>
       {fullname_sender}</p>
     </body>
