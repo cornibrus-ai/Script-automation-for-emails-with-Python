@@ -22,7 +22,7 @@ load_dotenv()
 #coordonnées de l'email
 email_sender = "ve31600@gmail.com"
 email_receiver = "maxime.ravaux@viacesi.fr"
-app_password = os.environ.get("yupb nptt qgfp vjco") #mot de passe d'applications Google
+app_password = os.getenv("GOOGLE_API_KEY") #mot de passe d'applications Google
 
 # Vérifie que le mot de passe de l'application est défini avant de passer à la suite
 if app_password is None:
