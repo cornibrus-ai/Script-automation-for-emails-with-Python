@@ -1,0 +1,14 @@
+[
+    {
+        "nom_prenom": "Jean Dupont",
+        "entreprise": "Entreprise A",
+        "poste": "Manager",
+        "adresse_mail": "jean.dupont@example.com"
+    },
+    {
+        "nom_prenom": "Marie Curie",
+        "entreprise": "Entreprise B",
+        "poste": "Directrice",
+        "adresse_mail": "marie.curie@example.com"
+    }
+]
