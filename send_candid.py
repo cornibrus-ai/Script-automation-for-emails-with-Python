@@ -1,3 +1,5 @@
+#Python prend déjà en charge tous les modules présents ici dans sa bibliothèque  -- pas besoin de les installer via le cmd.exe ;)
+
 import smtplib
 import os
 from email.message import EmailMessage
@@ -8,12 +10,13 @@ import sys
 if os.name == 'nt':
   os.system('chcp 65001')
 
-from dotenv import load_dotenv, dotenv_values #import des paires clé-valeur dans l'environnement de travail
-
-#Python prend déjà en charge tous les modules présents ici dans sa bibliothèque  -- pas besoin de les installer via le cmd.exe ;)
+from dotenv import load_dotenv, dotenv_values #import des paires clé-valeur pour charger les variables d'environnement depuis le fichier .env
 
 '''import time
 import random'''
+
+# Charger les variables d'environnement depuis un fichier .env
+load_dotenv()
 
 #coordonnées de l'email
 email_sender = "ve31600@gmail.com"
