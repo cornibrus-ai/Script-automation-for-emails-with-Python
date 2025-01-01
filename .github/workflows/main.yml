@@ -1,10 +1,10 @@
 # basic workflow avec la table d'actions
 
-name: CI
+name: CI #nom du workflow
 
-#Contrôles quand l'action est run
+#Evènements définies pour l'exécution du workflow
 on:
-  # Trigger le workflow en push ou pull request mais seulement dans la branche 'main'
+  # Trigger le workflow en push OU en pull request (évènements multiples) mais seulement dans la branche 'main'
   push:
     branches: [main]
   pull_request:
